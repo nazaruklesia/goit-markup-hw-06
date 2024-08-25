@@ -288,6 +288,7 @@ a {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 48px;
+  font-style: normal;
 }
 
 .mobile-networks {
@@ -941,6 +942,9 @@ a {
     align-items: baseline;
   }
   .footer-media-text {
+    text-align: start;
+  }
+  .logo-footer {
     text-align: start;
   }
 }
