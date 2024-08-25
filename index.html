@@ -24,9 +24,9 @@
     <header class="all-header">
       <div class="container header-container">
         <nav class="navigation-header">
-          <a class="logo" href="./index.html">Web <span class="logo-studio">Studio</span></a>
+          <a class="logo header-logo" href="./index.html">Web <span class="logo-studio">Studio</span></a>
 
-          <ul class="header">
+          <ul class="header-nav">
             <li class="header-list"><a class="header-link carrent" href="./index.html">Studio</a></li>
             <li class="header-list"><a class="header-link" href="">Portfolio</a></li>
             <li class="header-list"><a class="header-link" href="">Contacts</a></li>
@@ -40,8 +40,66 @@
             <li class="contacts-list"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#iconmenu-group"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile-menu -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-btn-close" width="8" height="8">
+              <use href="./images/icons.svg#iconVector"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-list">
+              <li class="mobile-list-item"><a class="mobile-link studio-link" href="./index.html">Studio</a></li>
+              <li class="mobile-list-item"><a class="mobile-link" href="">Portfolio</a></li>
+              <li class="mobile-list-item"><a class="mobile-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mobile-link-contact">
+              <li class="mobile-contact-list"><a class="mob-contact-link link-mail" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+              <li class="mobile-contact-list"><a class="mob-contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+          </address>
+          <div class="mobile-networks">
+            <ul class="mobile-networks-list">
+              <li class="mobile-networks-item">
+                <a class="mobile-link-networks" href="#"></a>
+                <svg class="mobile-networks-icon" wight="24" height="24">
+                  <use href="./images/icons.svg#iconinstagram"></use>
+                </svg>
+              </li>
+              <li class="mobile-networks-item">
+                <a class="mobile-link-networks" href="#"></a>
+                <svg class="mobile-networks-icon" wight="24" height="24">
+                  <use href="./images/icons.svg#icontwitter"></use>
+                </svg>
+              </li>
+              <li class="mobile-networks-item">
+                <a class="mobile-link-networks" href="#"></a>
+                <svg class="mobile-networks-icon" wight="24" height="24">
+                  <use href="./images/icons.svg#iconfacebook"></use>
+                </svg>
+              </li>
+              <li class="mobile-networks-item">
+                <a class="mobile-link-networks" href="#"></a>
+                <svg class="mobile-networks-icon" wight="24" height="24">
+                  <use href="./images/icons.svg#iconlinkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+
     <!-- Основна частина section-1 -->
 
     <main>
@@ -52,57 +110,66 @@
         </div>
       </section>
 
-      <section class="section-feature">
-        <!-- На майбутнє для читалок та пошукових систем section-2 -->
-        <div class="container">
-          <h2 class="visually-hidden">Features</h2>
-          <ul class="section-mine-second">
-            <li class="feature-item">
-              <div class="feature-untitle">
-                <svg class="feature-untitle-icon" width="64" height="64">
-                  <use href="./images/icons.svg#iconantenna"></use>
-                </svg>
-              </div>
-              <h3 class="title-three">Strategy</h3>
-              <p class="paragraph-small">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-            </li>
-            <li class="feature-item">
-              <div class="feature-untitle">
-                <svg class="feature-untitle-icon" width="64" height="64">
-                  <use href="./images/icons.svg#iconclock"></use>
-                </svg>
-              </div>
-              <h3 class="title-three">Punctuality</h3>
-              <p class="paragraph-small">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-            </li>
-            <li class="feature-item">
-              <div class="feature-untitle">
-                <svg class="feature-untitle-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icondiagram"></use>
-                </svg>
-              </div>
-              <h3 class="title-three">Diligence</h3>
-              <p class="paragraph-small">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-            </li>
-            <li class="feature-item">
-              <div class="feature-untitle">
-                <svg class="feature-untitle-icon" width="64" height="64">
-                  <use href="./images/icons.svg#iconastronaut"></use>
-                </svg>
-              </div>
-              <h3 class="title-three">Technologies</h3>
-              <p class="paragraph-small">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Команда section-3 -->
-      <section class="section-team">
+    <!-- На майбутнє для читалок та пошукових систем section-2 -->
+
+    <section class="section-feature">
+      <div class="container">
+        <h2 class="visually-hidden">Features</h2>
+        <ul class="section-mine-second">
+          <li class="feature-item">
+            <div class="feature-untitle">
+              <svg class="feature-untitle-icon" width="64" height="64">
+                <use href="./images/icons.svg#iconantenna"></use>
+              </svg>
+            </div>
+            <h3 class="title-three">Strategy</h3>
+            <p class="paragraph-small">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+          </li>
+          <li class="feature-item">
+            <div class="feature-untitle">
+              <svg class="feature-untitle-icon" width="64" height="64">
+                <use href="./images/icons.svg#iconclock"></use>
+              </svg>
+            </div>
+            <h3 class="title-three">Punctuality</h3>
+            <p class="paragraph-small">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+          </li>
+          <li class="feature-item">
+            <div class="feature-untitle">
+              <svg class="feature-untitle-icon" width="64" height="64">
+                <use href="./images/icons.svg#icondiagram"></use>
+              </svg>
+            </div>
+            <h3 class="title-three">Diligence</h3>
+            <p class="paragraph-small">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+          </li>
+          <li class="feature-item">
+            <div class="feature-untitle">
+              <svg class="feature-untitle-icon" width="64" height="64">
+                <use href="./images/icons.svg#iconastronaut"></use>
+              </svg>
+            </div>
+            <h3 class="title-three">Technologies</h3>
+            <p class="paragraph-small">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Команда section-3 -->
+
+    <section class="section-team">
         <div class="container">
           <h2 class="title-team">Our Team</h2>
           <ul class="section-list-team">
             <li class="list-names">
-              <img src="./images/img1.jpg" alt="photo1" width="264" />
+              <picture>
+                <source media="(min-width: 1158px)" srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"/>
+                <img src="./images/img1.jpg" alt="photo1" width="264" />
+              </picture>
+              
               <div class="team-box">
                 <h3 class="names">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
@@ -139,7 +206,13 @@
               </div>
             </li>
             <li class="list-names">
-              <img src="./images/img2.jpg" alt="photo2" width="264" />
+              <picture>
+                <source media="(min-width: 1158px)" srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"/>
+                <img src="./images/img2.jpg" alt="photo2" width="264" />
+              </picture>
+              
               <div class="team-box">
                 <h3 class="names">Tom Ford</h3>
                 <p class="position">Frontend Developer</p>
@@ -176,7 +249,13 @@
               </div>
             </li>
             <li class="list-names">
-              <img src="./images/img3.jpg" alt="photo3" width="264" />
+              <picture>
+                <source media="(min-width: 1158px)" srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"/>
+                <img src="./images/img3.jpg" alt="photo3" width="264" />
+              </picture>
+              
               <div class="team-box">
                 <h3 class="names">Camila Garcia</h3>
                 <p class="position">Marketing</p>
@@ -213,7 +292,13 @@
               </div>
             </li>
             <li class="list-names">
-              <img src="./images/img4.jpg" alt="photo4" width="264" />
+              <picture>
+                <source media="(min-width: 1158px)" srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"/>
+                 <img src="./images/img4.jpg" alt="photo4" width="264" />
+              </picture>
+             
               <div class="team-box">
                 <h3 class="names">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
@@ -252,14 +337,22 @@
           </ul>
         </div>
       </section>
-      <!-- section Portfolio section-4 -->
-      <section class="portfolio">
+
+    <!-- section Portfolio section-4 -->
+
+    <section class="portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="list-portfolio-item">
               <div class="tumb">
-                <img src="./images/1portfolio.jpg" alt="1portfolio" width="360" />
+                <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/1portfolio.jpg 1x, ./images/1portfolio-2x.jpg 2x "/>
+                  <source media="(min-width: 768px)" srcset="./images/1portfolio-tab-1x.jpg 1x, ./images/1portfolio-tab-2x.jpg 2x"/>
+                  <source media="(max-width: 767px)" srcset="./images/1portfolio-mob-1x.jpg 1x, ./images/1portfolio-mob-2x.jpg 2x"/>
+                  <img src="./images/1portfolio.jpg" alt="1portfolio" width="360" />
+                </picture>
+                
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
                   Storage App
@@ -273,7 +366,14 @@
             </li>
             <li class="list-portfolio-item">
               <div class="tumb">
-                <img src="./images/2portfolio.jpg" alt="2portfolio" width="360" />
+
+                <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/2portfolio.jpg 1x, ./images/2portfolio-2x.jpg 2x "/>
+                  <source media="(min-width: 768px)" srcset="./images/2portfolio-tab-1x.jpg 1x, ./images/2portfolio-tab-2x.jpg 2x"/>
+                  <source media="(max-width: 767px)" srcset="./images/2portfolio-mob-1x.jpg 1x, ./images/2portfolio-mob-2x.jpg 2x"/>
+                  <img src="./images/2portfolio.jpg" alt="2portfolio" width="360" />
+                </picture>
+   
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
                   Storage App
@@ -286,7 +386,13 @@
             </li>
             <li class="list-portfolio-item">
               <div class="tumb">
-                <img src="./images/3portfolio.jpg" alt="3portfolio" width="360" />
+                <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/3portfolio.jpg 1x, ./images/3portfolio-2x.jpg 2x"/>
+                  <source media="(min-width: 768px)" srcset="./images/3portfolio-tab-1x.jpg 1x, ./images/3portfolio-tab-2x.jpg 2x"/>
+                  <source media="(max-width: 767)" srcset="./images/3portfolio-mob-1x.jpg 1x, ./images/3portfolio-mob-2x.jpg 2x"/>
+                  <img src="./images/3portfolio.jpg" alt="3portfolio" width="360" />
+                </picture>
+       
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
                   Storage App
@@ -299,7 +405,13 @@
             </li>
             <li class="list-portfolio-item">
               <div class="tumb">
-                <img src="./images/4portfolio.jpg" alt="4portfolio" width="360" />
+                <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/4portfolio.jpg 1x, ./images/4portfolio-2x.jpg 2x"/>
+                  <source media="(min-width: 768px)" srcset="./images/4portfolio-tab-1x.jpg 1x, ./images/4portfolio-tab-2x.jpg 2x"/>
+                  <source media="(max-width: 767px)" srcset="./images/4portfolio-mob-1x.jpg 1x, ./images/4portfolio-mob-2x.jpg 2x"/>
+                   <img src="./images/4portfolio.jpg" alt="4portfolio" width="360" />
+                </picture>
+               
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
                   Storage App
@@ -312,7 +424,13 @@
             </li>
             <li class="list-portfolio-item">
               <div class="tumb">
-                <img src="./images/5portfolio.jpg" alt="5portfolio" width="360" />
+                <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/5portfolio.jpg 1x, ./images/5portfolio-2x.jpg 2x"/>
+                  <source media="(min-width: 768px)" srcset="./images/5portfolio-tab-1x.jpg 1x, ./images/5portfolio-tab-2x.jpg 2x"/>
+                  <source media="(max-width: 767px)" srcset="./images/5portfolio-mob-1x.jpg 1x, ./images/5portfolio-mob-2x.jpg 2x"/>
+                  <img src="./images/5portfolio.jpg" alt="5portfolio" width="360" />
+                </picture>
+
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
                   Storage App
@@ -325,7 +443,14 @@
             </li>
             <li class="list-portfolio-item">
               <div class="tumb">
-                <img src="./images/6portfolio.jpg" alt="6portfolio" width="360" />
+                <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/6portfolio.jpg 1x, ./images/6portfolio-2x.jpg 2x"/>
+                  <source media="(min-width: 768px)" srcset="./images/6portfolio-tab-1x.jpg 1x, ./images/6portfolio-tab-2x.jpg 2x"/>
+                  <source media="(max-width: 767px)" srcset="./images/6portfolio-mob-1x.jpg 1x, ./images/6portfolio-mob-2x.jpg 2x"/>
+                  <img src="./images/6portfolio.jpg" alt="6portfolio" width="360" />
+                
+                </picture>
+               
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
                   Storage App
@@ -344,6 +469,7 @@
     <!-- Додаткова інформація footer -->
 
     <footer class="footer-color">
+      <div class="all-footer-section">
       <div class="container media-contacts">
         <div class="footer-logo-paragraph">
           <a class="logo-footer" href="./index.html">Web <span class="logo-footer-studio">Studio</span></a>
@@ -383,9 +509,9 @@
           </ul>
         </div>
 
-        <!-- Footer-Subscribe-Form -->
+    <!-- Footer-Subscribe-Form -->
 
-        <div class="container-subscribe">
+    <div class="container-subscribe">
           <p class="footer-text-form">Subscribe</p>
           <form class="all-form-footer">
             <label class="footer-label" for="usermail">
@@ -401,11 +527,12 @@
           </form>
         </div>
       </div>
+      
     </footer>
 
     <!-- Модальне вікно -->
 
-    <div class="backdrop ">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -460,3 +587,4 @@
     </div>
   </body>
 </html>
+
