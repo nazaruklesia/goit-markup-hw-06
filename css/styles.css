@@ -1232,7 +1232,9 @@ flex-wrap: wrap;
 }
 
 /* media 1158 */
-
+@media screen and (min-width: 1158px){
 .all-form-footer {
   flex-wrap: nowrap;
 }
+}
+
